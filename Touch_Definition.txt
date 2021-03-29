@@ -1,0 +1,13 @@
+touch(AI, object){
+'''
+inputs are the AI and object to check is the positions of the AI and object are touching
+if AI and object touch, then determine if
+	A) is a player
+		if attacked, flee
+	B) is object
+		if the object is moving, something was thrown at AI, flee
+		if the object isnt moving, used for grabbing and object
+return should be nothing, since each conditional will use an action
+'''
+pass
+}

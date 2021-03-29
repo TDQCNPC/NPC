@@ -1,0 +1,11 @@
+class Object(name, value, speed):
+	'''
+	used for objects to interact (sell, buy, etc.)
+	ATTRIBS
+		- name
+		- x
+		- y
+		- value
+		- speed
+	'''
+	

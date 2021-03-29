@@ -1,0 +1,13 @@
+
+class Character:
+	Name = ""
+	X = 6
+	Y = 2
+	Position = [X,Y]
+	Speed = 0
+	if Name == "Player":
+		Color = "Blue"
+	elif Name == "AI":
+		Color = "Red"		
+	Else:
+		Color = "Brown"

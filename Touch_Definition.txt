@@ -10,4 +10,5 @@ if AI and object touch, then determine if
 		if the object isnt moving, used for grabbing and object
 return should be nothing, since each conditional will use an action
 '''
+pass
 }

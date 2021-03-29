@@ -3,6 +3,7 @@ class Character:
 	Name = ""
 	X = 6
 	Y = 2
+	Direction = 270
 	Position = [X,Y]
 	Speed = 0
 	if Name == "Player":

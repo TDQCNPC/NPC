@@ -1,0 +1,14 @@
+Class Sight:
+	'''
+	using sight as an object this class will describe 
+	wideLooks and narrowLooks
+	
+	Both cover the different fov for the npc so it can see/search
+	for 
+	
+	'''
+	def wideLooks(NPCposition,)
+
+
+
+	def narrowLooks()	

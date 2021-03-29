@@ -6,7 +6,7 @@ class Character:
 	Direction = 270
 	Position = [X,Y]
 	Speed = 0
-	StateArray = [Buying, Selling, Fleeing, Other, Waiting]
+	StateArray = [Selling, Buying, Fleeing, Giving Directions, Making PB&J, Waving]
 	Cash = 1000
 	ItemsAvail=[pbj, cabbage]
 	State = StateArray[4]

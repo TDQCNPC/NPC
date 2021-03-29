@@ -1,5 +1,19 @@
 #Hearing 
 def hearing():
 	'''
-	s
+	This function allows the NPC to hear with in the world
+	
+	leftEar() - When the an object makes a noise it will make an a line that grows +2 in each direction then remove its self and if left ear in range return Heard
+	
+	rightEar() - When the an object makes a noise it will make an a line that grows +2 in each direction then remove its self and if right ear in range return Heard
+	
+	steroLocate() - Will do ifs and figure out a cardnial direction based off the x and y of the incoming line  
+	
 	'''
+	leftHear = "False"
+	rightHear = "False"
+	def leftEar(lat,lon):
+	
+	def rightEar(lat,lon):
+	
+	def steroLocate(leftHear,rightHear,lat,lon):

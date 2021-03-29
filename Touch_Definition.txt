@@ -1,6 +1,7 @@
-touch(AI, object){
+def touch(self, object){
 '''
-inputs are the AI and object to check is the positions of the AI and object are touching
+METHOD of AI
+inputs are the AI(passed in as self) and object to check is the positions of the AI and object are touching
 if AI and object touch, then determine if
 	A) is a player
 		if attacked, flee

@@ -1,10 +1,16 @@
-def playerSearch:
-	'''
+def playerSearch(NPCposition,FaceDirection,DistancetoWall):
+	"""
+	Params:
+		NPCposition = x,y grid coordinates of the npc
+		FaceDirection = Cardinal direction of the face of the bot
+		DistancetoWall = distance in meters to the walls near the npc
 	
 	this function allows the NPC to sweep a 360 zone around them searching for the player.
 
 	this function decides if the player should use a wider vision for searching or a 
-	narrow vision for searching. 
+	narrow vision for searching.
+	
+	DistancetoWall- Checks for a wall near the NPC if there is gathers the distance between the walls and npc
 	
 	wideLooks- this is a wider coned vision that isnt long range (distance wise)
 	
@@ -13,19 +19,29 @@ def playerSearch:
 	Both cover the different fov for the npc so it can see/search
 	for the player 
 	
-	'''
-	def wideLooks(NPCposition,FaceDirection)
-		'''
+	"""
+	def DistancetoWall(NPCposition,FaceDirection):
+		"""
+		checks if there is a wall within a range of 45 degrees to the left and right of the FaceDirection
+		gathers the distance of the walls in what direction the wall was spotted.
+		Using some complicated math algorithim it then decides whether to use wideLooks or narrowLooks
+		
+		if the npc is in a house default to wideLooks
+		
+		
+		"""
+	def wideLooks(NPCposition,FaceDirection):
+		"""
 		based on npc Position it activates. Based on the facingdirection and the location
-		of the wall infront of the npc, if the wall is <= 5 meters away or inside a building 
+		of the wall infront of the npc, if the wall is in x* meters away or inside a building 
 		then this activates.
  		Using a wider vision (which has a short range) the NPC checks for the player. 
-
-		'''
+		x* is found through DistancetoWalls functions
+		"""
 	
 	def narrowLooks(NPCposition,faceDirection):
-		'''
-		based on npc Position it activates. Based on the facing direction and the location
-		of the wall infront of the npc, if the wall is > 5 meters away then this activates.
+		"""
+		based on npc Position it activates. Based on the DistancetoWall function this function
+		is chosen and gets ran by the npc.
 		Using a narrow vision (which is long range) the NPC Checks for the player.
-		'''
+		"""

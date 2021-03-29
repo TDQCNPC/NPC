@@ -6,6 +6,10 @@ class Character:
 	Direction = 270
 	Position = [X,Y]
 	Speed = 0
+	StateArray = [Buying, Selling, Fleeing, Other, Waiting]
+	Cash = 1000
+	ItemsAvail=[pbj, cabbage]
+	State = StateArray[4]
 	if Name == "Player":
 		Color = "Blue"
 	elif Name == "AI":

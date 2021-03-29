@@ -1,5 +1,6 @@
 #Hearing 
-def hearing():
+class hearing:
+
 	'''
 	This function allows the NPC to hear with in the world
 	
@@ -12,8 +13,28 @@ def hearing():
 	'''
 	leftHear = "False"
 	rightHear = "False"
-	def leftEar(lat,lon):
-	
-	def rightEar(lat,lon):
-	
-	def steroLocate(leftHear,rightHear,lat,lon):
+	lEar = [x,y]
+	rEar = [x,y]
+	def leftEar(self,lat,lon):
+		if lat == self.lEar[0]:
+			self.leftHear = "True"
+		elif lon == self.lEar[1]:
+			self.leftHear = "True"
+		else:	 
+			self.leftHear = "False"
+			
+	def rightEar(self,lat,lon):
+		if lat == self.rEar[0]:
+			self.righttHear = "True"
+		elif lon == self.rEar[1]:
+			self.rightHear = "True"
+		else:	 
+			self.rightHear = "False"
+	def steroLocate(self,leftHear,rightHear,lat,lon):
+		if self.leftHear and self.rightEar == "True":
+			if (lon < 0):
+				return Front 
+			else:
+				return Back
+				
+				

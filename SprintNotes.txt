@@ -9,8 +9,8 @@
                                     Police station, shoving movable objects out of the way.
                 Give Directions
                         Orients himself at the dead reckoning position towards a target and points
-Make PB&J
-        Previously defined.
+		Make PB&J
+        		Previously defined.
                 Wave
                         1. Introductory wave used to greet the player when it sees him
                         2. Signal wave used to get the player to come towards the npc

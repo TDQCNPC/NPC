@@ -1,4 +1,6 @@
 NPCposition_UNITTEST:
+	#pass cases
+	input several known good coordinates on the graph which should work
         #failure cases 
 	IndexError- Check if NPCposition is not on the graph itself
             inputs a 1 number off of the graph
@@ -49,6 +51,29 @@ test for wideLooks function:
         PlayerSeen==True
     test for if a player is just outside the cone:
         playerSeen==False
+	
+	#failure cases
+	tells the npc that the player is in vision cone of the npc however it really isnt
+		failsafe checking to make sure the player is really in the vision of the npc
+		
+test for narrowLooks function:
+    NPCposition_UNITTEST()
+    FaceDirection_UNITTEST()
+    #pass cases 
+    checks if npc can see see a player in a narrow cone
+    Test for if a player is in a cone:
+        PlayerSeen==True
+    test for if a player is just outside the cone:
+        playerSeen==False
+	
+	#failure cases
+	tells the npc that the player is in vision cone of the npc however it really isnt
+		failsafe checking to make sure the player is really in the vision of the npc
+		
+
+
+	
+
     
 
 

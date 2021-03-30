@@ -1,0 +1,24 @@
+﻿Measurable target of sprints will be:
+
+Functions to unit test for Dees 
+
+def Give_Directions (DesiredLocation):
+'''
+Input parameter is DesiredLocation from player, type is string
+Return parameter is X, Y coordinates of location, type is list
+NPC orients himself at the dead reckoning position towards a target and points
+'''
+			
+def MakePB&J (DesirePB):
+'''
+Input parameter is DesirePB from player, type is bool
+Return parameter is PBSatisfied, type is bool
+NPC makes peanut butter and jelly and provides it to player 
+'''
+
+def Wave ():
+'''
+Once npc sees player he attempts to wave the player towards him
+'''
+
+

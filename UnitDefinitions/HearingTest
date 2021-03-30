@@ -1,93 +1,31 @@
 #Hearing 
-class hearing:
-
-	'''
-	This function allows the NPC to hear with in the world
-	
-	leftEar() - When the an object makes a noise it will make an a line that grows +2 in each direction then remove its self and if left ear in range return Heard
-	
-	rightEar() - When the an object makes a noise it will make an a line that grows +2 in each direction then remove its self and if right ear in range return Heard
-	
-	steroLocate() - Will do ifs and figure out a cardnial direction based off the x and y of the incoming line  
-	
-	'''
-	leftHear = "False"
-	rightHear = "False"
-	lEar = [x,y]
-	rEar = [x,y]
-	def leftEar(self,lat,lon):
-		'''
-		checks if left ear sound detection is in hearing radius   
-		lat is the x of the soundline emitted by sound
-		lon its the y of the soundline emitted by sound
-		'''
-		if lat == self.lEar[0]:
-			self.leftHear = "True"
-		elif lon == self.lEar[1]:
-			self.leftHear = "True"
-		else:	 
-			self.leftHear = "False"
-			
-	def rightEar(self,lat,lon):
-		'''
-		checks if right ear sound detection is in hearing radius   
-		lat is the x of the soundline emitted by sound
-		lon its the y of the soundline emitted by sound
-		'''
-		if lat == self.rEar[0]:
-			self.righttHear = "True"
-		elif lon == self.rEar[1]:
-			self.rightHear = "True"
-		else:	 
-			self.rightHear = "False"
-	def steroLocate(self,lat,lon):
-		'''
-		Uses bothe leftEar and rightEar are true then checks direction based off that
-		lat is the x of the soundline emitted by sound
-		lon its the y of the soundline emitted by sound
-		'''
-		if self.leftHear and self.rightEar == "True":
-			if (lon < 0):
-				return Front 
-			else:
-				return Back
-		elif self.leftHear == "False" and self.rightEar == "True":
-			return Right
-		elif self.leftHear == "True" and self.rightEar == "False":
-			return Left
-		else :
-			return NotHeard 
-class HearingTest(unittest):
+HearingTest_UNITTEST:
 	'''	
 	this will test each function on its own to check its functionality
 	'''
-	def LeftEartest():
-		if lon is a char
-			raise typeerror
-		if lon < 0 
-			raise indexerror
-		if lat is a char
-			raise typeerror
-		if lat < 0 
-			raise indexerror
-
+	LeftEar_UNITTEST:
+		#failure cases
+		TypeError 
+			inputs lon as char 
+			inputs lat as char
+		IndexError
+			inputs lon less than 0
+			inputs lat less than 0
 		
-	def RightEartest():
-		if lon is a char
-			raise typeerror
-		if lon < 0 
-			raise indexerror
-		if lat is a char
-			raise typeerror
-		if lat < 0 
-			raise indexerror
+	RightEar_UNITTEST:
+		#failure cases
+		TypeError 
+			inputs lon as char
+			inputs lat as char
+		IndexError
+			inputs lon less than 0
+			inputs lat less than 0
 		
-	def steroTest():
-		if lon is a char
-			raise typeerror
-		if lon < 0 
-			raise indexerror
-		if lat is a char
-			raise typeerror
-		if lat < 0 
-			raise indexerror
+	stero_UNITTEST:
+		#failure cases
+		TypeError
+			inputs lon as char
+			inputs lat as char
+		IndexError
+			inputs lon less than 0
+			inputs lat less than 0

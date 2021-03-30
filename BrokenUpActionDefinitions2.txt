@@ -2,23 +2,47 @@
 
 Functions to unit test for Dees 
 
-def Give_Directions (DesiredLocation):
-'''
-Input parameter is DesiredLocation from player, type is string
-Return parameter is X, Y coordinates of location, type is list
-NPC orients himself at the dead reckoning position towards a target and points
-'''
-			
-def MakePB&J (DesirePB):
-'''
-Input parameter is DesirePB from player, type is bool
-Return parameter is PBSatisfied, type is bool
-NPC makes peanut butter and jelly and provides it to player 
-'''
 
-def Wave ():
-'''
-Once npc sees player he attempts to wave the player towards him
-'''
+Give_Directions_UNITTEST:
+	#failure cases
+	TypeError - Check if the desired location is input as a string. 
+		inputs an int
+		inputs a float 
+		inputs a list
+		inputs a tuple
+		inputs a dictonary
+		inputs a double
+		inputs a set 
+		inputs a symbol
+		inputs a bool 
+	ValueError - Check if desired location is valid 
+		inputs a random char
+		inputs a random string that is not one of the eight approved locations
+	#pass cases
+	Checking proper implementation turns and points at position properly  
+		for location in places:
+			inputs location
+	 
+MakePB&J_UNITTEST:
+	#failure cases
+	TypeError - Check what happens when non bool types are passed into MakePB&J
+		inputs a string
+		inputs an int
+		inputs a float
+		inputs a double
+		inputs a list
+		inputs a list
+		inputs a tuple
+		inputs a dictionary
+		inputs a set
+		inputs a symbol
+	#pass cases
+		inputs a True for DesirePB from player, recieves PBSatisfied True
+		inputs a False for DesirePB from player, recieves PBSatisfied False 
+
+Wave_UNITTEST:
+	#pass cases
+		function is called and npc waves 
+
 
 

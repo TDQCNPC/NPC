@@ -1,0 +1,22 @@
+Touch_UNITTEST():
+        #type errors
+        for i in (random int, char, list, dictionary, tuple):
+                pass i for self, expect type error
+                pass i for object, expect type error
+        
+        #test if it sends in the same object for both parameters
+        if self == object, expect type error
+
+        #test not enough parameters
+        pass in 0 args, expect failure
+        pass in 1 arg, expect failure
+
+        #test too many parameters
+        pass in 3 args, expect failue
+        pass in random large amount of args, expect failure
+        
+        #test good cases, actually touching
+        pass in 2 objects that are in the same grid square, expect it so say touching   
+
+        #test bad cases, not touching
+        pass in 2 objects that are not in the same grid square, expect it to say touching

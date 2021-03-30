@@ -29,3 +29,5 @@ HearingTest_UNITTEST:
 		IndexError
 			inputs lon less than 0
 			inputs lat less than 0
+		DirectionError 
+			inputs from oppiste side of sound are true 

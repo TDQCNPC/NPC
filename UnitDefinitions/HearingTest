@@ -31,3 +31,11 @@ HearingTest_UNITTEST:
 			inputs lat less than 0
 		DirectionError 
 			inputs from oppiste side of sound are true 
+			pass if both are true check lat lon for direction
+			pass lat 5 lon 6 expect forward
+			pass lat 1 lon 6 expect behind 
+			pass lat 4 lon 0 expect left
+			pass lat 5 lon 8 expect right
+		SuperError 
+			inputs higher than sound values max
+			

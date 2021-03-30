@@ -27,7 +27,8 @@ def Give_Directions (DesiredLocation):
 '''
 Input parameter is DesiredLocation from player, type is string
 Return parameter is X, Y coordinates of location, type is list
-NPC orients himself at the dead reckoning position towards a target and points
+NPC orients himself at the dead reckoning position towards a target and points, within this function there are 8 distinct
+places the npc can recognize and point to 
 '''
 			
 def MakePB&J (DesirePB):

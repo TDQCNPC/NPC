@@ -6,6 +6,7 @@ NPCposition_UNITTEST:
             inputs a 1 number off of the graph
             inputs a negative number
             inputs a positive number way off the graph
+		#input value that would end with NPC in wall 
         TypeError- check if the x or the y in npc is any type other than int
             inputs a string for x or y
             inputs a float for x or y

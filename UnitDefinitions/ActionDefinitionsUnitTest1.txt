@@ -17,7 +17,7 @@ Sell_UNITTEST:
 
 	#passing cases
 		pick an item known to be sold by the merchant
-
+		returns correct money desired from player 
 Buy_UNITTEST: 
 	#failure cases
 	TypeError
@@ -33,6 +33,7 @@ Buy_UNITTEST:
 
 	#passing cases
 		pick an item known to be owned
+		returns correct money given to player 
 
 Flee_UNITTEST:
 	#failure cases

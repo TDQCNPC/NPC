@@ -1,0 +1,29 @@
+
+Unit Tests for Scruggs to Write Up
+
+3 actions
+
+def Sell (Object):
+'''
+Input parameter is object you want to sell to merchant, type is string
+Return parameter is cash merchant dersires for object, type is int 
+Takes money from player, then takes object out of container and places it into the players hands
+'''
+
+def Buy (Object) 
+'''
+Input parameter is object you want to buy from merchant, type is string
+Return parameter is cash merchant will give you for object, type is int
+Takes object from player, then takes cash out of pocket and places it into the players hands
+'''
+
+def Flee (PhysicalContact)
+'''
+Input parameter is PhysicalContact from player, type is bool
+Return parameter is Location of NPC, type is string
+Receives physical contact from player, if there is physical contact then NPC flees to police station
+shoving physical contact out of the way. 
+'''
+
+
+

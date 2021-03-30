@@ -1,16 +1,14 @@
-def playerSearch(NPCposition,FaceDirection,DistancetoWall):
+def playerSearch(NPCposition,FaceDirection):
 	"""
 	Params:
 		NPCposition = x,y grid coordinates of the npc
 		FaceDirection = Cardinal direction of the face of the bot
-		DistancetoWall = distance in meters to the walls near the npc
 	
 	this function allows the NPC to sweep a 360 zone around them searching for the player.
 
 	this function decides if the player should use a wider vision for searching or a 
 	narrow vision for searching.
 	
-	DistancetoWall- Checks for a wall near the NPC if there is gathers the distance between the walls and npc
 	
 	wideLooks- this is a wider coned vision that isnt long range (distance wise)
 	

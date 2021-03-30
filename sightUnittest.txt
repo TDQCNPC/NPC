@@ -1,0 +1,47 @@
+NPCposition_UNITTEST:
+        IndexError- Check if NPCposition is not on the graph itself
+            inputs a 1 number off of the graph
+            inputs a negative number
+            inputs a positive number way off the graph
+        TypeError- check if the x or the y in npc is any type other than int
+            inputs a string for x or y
+            inputs a float for x or y
+            inputs a random character
+
+FaceDirection_UNITTEST:
+        TypeError - Checks if the face direction is one of the 8 cardinal directions
+            inputs a number
+            inputs a random char
+            inputs a symbol
+        Checking Proper implementation
+            inputs all 8 directions, npc on graph should depict each direction
+
+Test for playerSearch function:
+    NPCposition_UNITTEST()
+    FaceDirection_UNITTEST()
+test for DistancetoWall function:
+    NPCposition_UNITTEST()
+    FaceDirection_UNITTEST()
+    
+    Checking proper implementation
+    IndexError - checks bad cases for direction to a wall:
+        input a random number higher than the size of the graph for distance to the nearest wall
+        input a negative number
+    TypeError 
+        input a string
+        input a random char
+
+    also checks if NPCposition is in a house:
+        input npc being in a house (should send us to the wideLooks function)
+        also see if the npc is not in a house (should send us to the narrowlooks function if other supplemental data deems it necessary(such as distance to wall))
+
+test for wideLooks function:
+    NPCposition_UNITTEST()
+    FaceDirection_UNITTEST()
+
+    checks if npc can see see a player in a widecone
+    Test for if a player is in a cone:
+        PlayerSeen==True
+    test for if a player is just outside the cone:
+        playerSeen==False
+    test for

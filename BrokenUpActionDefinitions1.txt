@@ -8,6 +8,20 @@ def Sell (Object):
 Input parameter is object you want to sell to merchant, type is string
 Return parameter is cash merchant dersires for object, type is int 
 Takes money from player, then takes object out of container and places it into the players hands
+#failure cases
+TypeError
+    input an int
+    input a list/tuple/array/dictionary
+    input a float
+    input a bool
+InputError
+    input an item npc doesnt own
+indexError
+    input more than one item
+#passing cases
+pick an item known to be sold by the merchant
+
+
 '''
 
 def Buy (Object) 
@@ -16,6 +30,20 @@ Input parameter is object you want to buy from merchant, type is string
 Return parameter is cash merchant will give you for object, type is int
 Takes object from player, then takes cash out of pocket and places it into the players hands
 '''
+#failure cases
+TypeError
+    input an int
+    input a list/tuple/array/dictionary
+    input a float
+    input a bool
+InputError
+    input an item npc doesnt own
+    input an item the game doesnt know it exist
+indexError
+    input more than one item
+#passing cases
+pick an item known to be owned
+
 
 def Flee (PhysicalContact)
 '''
@@ -24,6 +52,19 @@ Return parameter is Location of NPC, type is string
 Receives physical contact from player, if there is physical contact then NPC flees to police station
 shoving physical contact out of the way. 
 '''
+
+#failure cases
+TypeError
+    input a int
+    input a string
+    input a list/tuple/array/dictionary
+    input a float
+possible implemtationErrors
+    make a npc "think" they were touched by a player even though the players location is no where near the npc
+    npc gets hit but doesnt flee to police station 
+#passing cases
+    make the npc get hit and check to make sure its flee is toward the police station
+
 
 
 

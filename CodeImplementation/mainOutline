@@ -1,0 +1,11 @@
+def main():
+    Paul = AI(Position=[5,3],Inventory=["Cabbage","PB&J","Orange","Cornflakes"])
+    while True:
+        Paul.Sense.Hearing(Paul.Position)
+        Paul.Sense.Sight(Paul.Position, Paul.facingdirection)
+        for item in items:
+            touch = Paul.Sense.touch(item)
+            If touch == "Attacked":
+                Paul.Action.flee()
+            else:
+                pass

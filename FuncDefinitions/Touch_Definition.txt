@@ -1,0 +1,15 @@
+def touch(self, object):
+'''
+METHOD of AI, check for for loop with all objects and characters
+inputs are the AI(passed in as self) and object to check is the positions of the AI and object are touching
+if AI and object touch, then determine if object 
+	A) is moving
+		return "attacked"
+	B) is object
+		return "buying"
+return should checked in main to see what action should be performed with object
+	- attacked will cause flee
+	- buying will bause the buy action
+'''
+
+}

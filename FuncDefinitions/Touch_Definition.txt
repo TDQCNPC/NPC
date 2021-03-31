@@ -9,7 +9,7 @@ if AI and object touch, then determine if object
 		return "selling"
 return should checked in main to see what action should be performed with object
 	- attacked will cause flee
-	- buying will cause the buy action
+	- selling will cause the sell action
 '''
 
 }

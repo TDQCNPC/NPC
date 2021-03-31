@@ -5,11 +5,11 @@ inputs are the AI(passed in as self) and object to check is the positions of the
 if AI and object touch, then determine if object 
 	A) is moving
 		return "attacked"
-	B) is object
-		return "buying"
+	B) is object owned by AI
+		return "selling"
 return should checked in main to see what action should be performed with object
 	- attacked will cause flee
-	- buying will bause the buy action
+	- selling will cause the sell action
 '''
 
 }

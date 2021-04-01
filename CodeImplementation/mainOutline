@@ -1,5 +1,5 @@
 def main():
-    Paul = AI(Position=[5,3],Inventory=["Cabbage","PB&J","Orange","Cornflakes"])
+    Paul = AI(Position=[5,3],Inventory=["Cabbage","PB&J","Orange","Cornflakes"],Sprite="Pual.jpg")
     while True:
         Paul.state = "MakePBandJ"
         Paul.Sense.Hearing(Paul.Position)

@@ -9,5 +9,3 @@ if AI and object touch, then determine if object
 return should checked in main to see what action should be performed with object
 	- attacked will cause flee
 '''
-
-}

@@ -138,3 +138,30 @@ class Sense:
       if object.speed > 0:
         return "Attacked"
     return "no action"
+
+def Give_Directions (self):
+Input parameter is DesiredLocation from player, type is string
+    Holder = self.FaceDirection
+    completed = 0 
+    while completed == 0:
+        read user input (DesiredLocation)
+        Locations = {
+            "Church":"North East"
+            "Police Station":"North West"
+            "Cave":"South West"
+        }
+        self.FaceDirection = Locations.Get(DesiredLocation, 0)
+        if self.FaceDirection == 0:
+            print ("Please Select a Location")
+            completed = 0
+        else:
+            completed = 1
+    self.FaceDirection = Holder
+    return (Locations.Get(DesiredLocation))
+
+def MakePB&J (self):
+    Holder = self.sprite
+    self.sprite = MakePBandJ.gif
+    sleep 5ms
+    add self.inventory(PBandJ)
+    self.sprite = Holder 

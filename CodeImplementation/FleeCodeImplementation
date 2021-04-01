@@ -1,0 +1,9 @@
+def Flee():
+  '''
+  plays flee.jpg 
+  '''
+  holder = AI.sprite
+  AI.sprite = flee.jpg
+  sleep 5sec
+  AI.sprite = holder
+  pass

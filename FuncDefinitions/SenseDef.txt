@@ -1,4 +1,4 @@
-#Hearing 
+class sense():
 def hearing(x,y):
 
 	'''
@@ -42,7 +42,6 @@ def hearing(x,y):
         AI.position = x,y grid coordinates of the NPC
         Player.Position = x,y grid coordinates of the Player
         FaceDirection = Cardinal directions. the way the character is facing
-
     vars:
         Seen = true or false boolean based on if the player is seen by the ai
         AIVisionCone = cone of vision of the ai for making seen true or false
@@ -64,5 +63,3 @@ return should checked in main to see what action should be performed with object
 	- attacked will cause flee
 	- selling will cause the sell action
 '''
-
-}

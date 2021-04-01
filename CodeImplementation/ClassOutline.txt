@@ -6,13 +6,25 @@ class AI:
       self.Sense = Sense
       
 class Action:
-  def buy(item):
+  def buy(item,PlayerObject):
     if item in items:
       if item in AI.Inventory:
-        
+        PlayerObject.Inventory.append(item)
+        Player.Money -= item.price
+        AI.money +=item.price
+        AI.Inventory.remove(item)
+
     else:
       return "That is not an item I possess"
-  def sell():
+  def sell()
+    if item in items:
+      if item in PlayerObject.Inventory:
+        AI.Inventory.append(item)
+        AI.Money -= item.price
+        PlayerObject.money +=item.price
+        PlayerObject.inventory.remove(item) 
+    else:
+      return "That is not an item Ive ever heard of"
   def flee():
   def wave():
   def makePB&J():

@@ -1,11 +1,26 @@
 class AI:
-  def __init__ (self, Action = None, Sense = None, Position[0,0], FaceDirection = "North", Money = 100, Inventory = [], State = "Rest",Sprite = "Defualt.jpg")
-    if Sction == none:
-      self.Action = Action
-    if Sense == none:
-      self.Sense = Sense
+  def __init__ (self,
+                action = None,
+                sense = None,
+                Position = [0,0],
+                FaceDirection = "North",
+                Money = 100,
+                Inventory = [],
+                State = "Rest",
+                Sprite = "Defualt.jpg"):
+    #if Action == None:
+    #  self.Action = Action
+    #if Sense == None:
+    #  self.Sense = Sense
+    self.action = action
+    self.sense = sense
+    if self.action is None:
+      self.action = Action()
+    if self.sense is None:
+      self.sense = Sense()
       
 class Action:
+  @staticmethod
   def buy(item,PlayerObject):
     if item in items:
       if item in AI.Inventory:
@@ -16,6 +31,8 @@ class Action:
 
     else:
       return "That is not an item I possess"
+
+  @staticmethod
   def sell()
     if item in items:
       if item in PlayerObject.Inventory:
@@ -25,6 +42,8 @@ class Action:
         PlayerObject.inventory.remove(item) 
     else:
       return "That is not an item Ive ever heard of"
+
+  @staticmethod
   def Flee():
   	'''
   	plays flee.jpg 
@@ -34,7 +53,8 @@ class Action:
   	sleep 5sec
   	AI.sprite = holder
  	sys.exit()
-  def wave():
+
+  def wave(self):
     	rest = self.sprite
 	    if self.state == "waving":
 		      self.sprite = "Waving.gif"				 

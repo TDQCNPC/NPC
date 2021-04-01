@@ -39,8 +39,6 @@ class Action:
 	    if self.state == "waving":
 		      self.sprite = "Waving.gif"				 
 		      self.sprite = "rest"
-  def makePB&J():
-  def giveDirections():
   
 class Sense:
   def  hearing(x,y):

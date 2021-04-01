@@ -10,3 +10,7 @@ return should checked in main to see what action should be performed with object
 	- attacked will cause flee
 '''
 
+if object.position == self.position:
+	if object.speed > 0:
+		return "Attacked"
+return "no action"

@@ -12,9 +12,9 @@ def main():
                 Paul.Action.flee()        
         if seen:
             Paul.state = "wave"
-        if player.Position[1] == (Paul.Position[1]+1) and (player.Position[0] == paul.Position[0])
+        elif player.Position[1] == (Paul.Position[1]+1) and (player.Position[0] == paul.Position[0])
             Paul.state = input()
-        if Paul.state == "Buying":
+        elif Paul.state == "Buying":
             Paul.action.buy(read)
         elif Paul.state == "Selling":
             Paul.action.sell(read)

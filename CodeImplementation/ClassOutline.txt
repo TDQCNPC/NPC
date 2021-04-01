@@ -25,7 +25,15 @@ class Action:
         PlayerObject.inventory.remove(item) 
     else:
       return "That is not an item Ive ever heard of"
-  def flee():
+  def Flee():
+  	'''
+  	plays flee.jpg 
+  	'''
+  	holder = AI.sprite
+  	AI.sprite = flee.jpg
+  	sleep 5sec
+  	AI.sprite = holder
+ 	sys.exit()
   def wave():
     	rest = self.sprite
 	    if self.state == "waving":

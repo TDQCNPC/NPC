@@ -1,0 +1,7 @@
+			
+def MakePB&J (self):
+    Holder = self.sprite
+    self.sprite = MakePBandJ.gif
+    sleep 5ms
+    add self.inventory(PBandJ)
+    self.sprite = Holder 

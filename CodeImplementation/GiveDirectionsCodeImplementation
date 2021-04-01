@@ -1,0 +1,21 @@
+
+def Give_Directions (self):
+'''
+Input parameter is DesiredLocation from player, type is string
+    Holder = self.FaceDirection
+    completed = 0 
+    while completed == 0:
+        read user input (DesiredLocation)
+        Locations = {
+            "Church":"North East"
+            "Police Station":"North West"
+            "Cave":"South West"
+        }
+        self.FaceDirection = Locations.Get(DesiredLocation, 0)
+        if self.FaceDirection == 0:
+            print ("Please Select a Location")
+            completed = 0
+        else:
+            completed = 1
+    self.FaceDirection = Holder
+    return (Locations.Get(DesiredLocation))

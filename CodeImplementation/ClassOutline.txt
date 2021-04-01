@@ -6,7 +6,12 @@ class AI:
       self.Sense = Sense
       
 class Action:
-  def buy():
+  def buy(item):
+    if item in items:
+      if item in AI.Inventory:
+        
+    else:
+      return "That is not an item I possess"
   def sell():
   def flee():
   def wave():

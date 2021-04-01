@@ -2,18 +2,18 @@
 
 6 actions
 
-def Sell (Object):
+def Sell (Object, player):
 '''
 Input parameter is object you want to sell to merchant, type is string
-Return parameter is cash merchant dersires for object, type is int 
-Takes money from player, then takes object out of container and places it into the players hands
+Return none 
+Takes money from AI and gives to player, then takes object from player
 '''
 
-def Buy (Object): 
+def Buy (Object, player): 
 '''
 Input parameter is object you want to buy from merchant, type is string
-Return parameter is cash merchant will give you for object, type is int
-Takes object from player, then takes cash out of pocket and places it into the players hands
+Return none
+Takes object from AI and gives to player, then takes cash from player
 '''
 
 def Flee ():

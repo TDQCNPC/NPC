@@ -1,5 +1,5 @@
 class AI:
-  def __init__ (self, Action = None, Sense = None, Position[0,0], FaceDirection = "North", Money = 100, Inventory = [], State = "Rest")
+  def __init__ (self, Action = None, Sense = None, Position[0,0], FaceDirection = "North", Money = 100, Inventory = [], State = "Rest",Sprite = "Defualt.jpg")
     if Sction == none:
       self.Action = Action
     if Sense == none:

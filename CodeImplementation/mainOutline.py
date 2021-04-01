@@ -10,7 +10,6 @@ def main():
             touch = Paul.Sense.touch(item)
             If touch == "Attacked":
                 Paul.Action.flee()
-                Game.end() #need to figure this out
         if seen:
             Paul.state = "wave"
         if player.Position[1] == (Paul.Position[1]+1) and (player.Position[0] == paul.Position[0])

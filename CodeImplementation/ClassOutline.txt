@@ -15,5 +15,24 @@ class Action:
   
 class Sense:
   def hearing():
-  def sight():
+  def Sight(AI.position,Player.Position,FaceDirection):
+    #returns seen as true if the player has been seen
+    #returns seen as false if the player has not seen
+    """
+    Params:
+        AI.position = x,y grid coordinates of the NPC
+        Player.Position = x,y grid coordinates of the Player
+        FaceDirection = Cardinal directions. the way the character is facing
+
+    vars:
+        Seen = true or false boolean based on if the player is seen by the ai
+        AIVisionCone = cone of vision of the ai for making seen true or false
+    """
+    x, y = Ai.position
+    AIVisionCone = [[x,y+2],[x,y+3],[x,y+4],
+    [x-1,y+1],[x+1,y+1],[x-2,y+2],[x-1,y+2],[x+1,y+2],[x+2,y+2]]
+    if Player.Position in AIVisionCone:
+      return seen=True
+    return seen=False
+
   def touch():

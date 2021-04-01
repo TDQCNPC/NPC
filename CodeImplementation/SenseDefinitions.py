@@ -115,52 +115,23 @@ class hearing:
 		else :
 			return NotHeard 
 				
-def playerSearch(NPCposition,FaceDirection):
-	"""
-	Params:
-		NPCposition = x,y grid coordinates of the npc
-		FaceDirection = Cardinal direction of the face of the bot
-	
-	this function allows the NPC to sweep a 360 zone around them searching for the player.
+ def Sight(AI.position,Player.Position,FaceDirection):
+    #returns seen as true if the player has been seen
+    #returns seen as false if the player has not seen
+    """
+    Params:
+        AI.position = x,y grid coordinates of the NPC
+        Player.Position = x,y grid coordinates of the Player
+        FaceDirection = Cardinal directions. the way the character is facing
 
-	this function decides if the player should use a wider vision for searching or a 
-	narrow vision for searching.
-	
-	
-	wideLooks- this is a wider coned vision that isnt long range (distance wise)
-	
-	narrowLooks- this is a more narrow vision but has a longer range for distance spotting 
-	
-	Both cover the different fov for the npc so it can see/search
-	for the player 
-	
+    vars:
+        Seen = true or false boolean based on if the player is seen by the ai
+        AIVisionCone = cone of vision of the ai for making seen true or false
+    Def:
+	Function used to detect if the player is within the vision cone of the AI
 	"""
-	def DistancetoWall(NPCposition,FaceDirection):
-		"""
-		checks if there is a wall within a range of 45 degrees to the left and right of the FaceDirection
-		gathers the distance of the walls in what direction the wall was spotted.
-		Using some complicated math algorithim it then decides whether to use wideLooks or narrowLooks
-		
-		if the npc is in a house default to wideLooks
-		
-		
-		"""
-	def wideLooks(NPCposition,FaceDirection):
-		"""
-		based on npc Position it activates. Based on the facingdirection and the location
-		of the wall infront of the npc, if the wall is in x* meters away or inside a building 
-		then this activates.
- 		Using a wider vision (which has a short range) the NPC checks for the player. 
-		x* is found through DistancetoWalls functions
-		"""
-	
-	def narrowLooks(NPCposition,faceDirection):
-		"""
-		based on npc Position it activates. Based on the DistancetoWall function this function
-		is chosen and gets ran by the npc.
-		Using a narrow vision (which is long range) the NPC Checks for the player.
-		"""
 
+	
 def touch(self, object):
 '''
 METHOD of AI, check for for loop with all objects and characters

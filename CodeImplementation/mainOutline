@@ -1,3 +1,5 @@
+import ClassOutline.py
+
 def main():
     Paul = AI(Position=[5,3],Inventory=["Cabbage","PB&J","Orange","Cornflakes"],Sprite="Pual.jpg")
     while True:

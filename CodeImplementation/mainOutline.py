@@ -12,17 +12,17 @@ def main():
                 Paul.Action.flee()
         if seen:
             Paul.state = "wave"
-        if player.Position[1] == (Paul.Position[1]+1) and (player.Position[0] == paul.Position[0])
+        elif player.Position[1] == (Paul.Position[1]+1) and (player.Position[0] == paul.Position[0])
             Paul.state = input()
-        if Paul.state == "Buying":
+        elif Paul.state == "Buying":
             Paul.action.buy(read)
-        if Paul.state == "Selling":
+        elif Paul.state == "Selling":
             Paul.action.sell(read)
-        if Paul.state == "wave":
+        elif Paul.state == "wave":
             Paul.action.wave()
-        if Paul.state == "Directions":
+        elif Paul.state == "Directions":
             Paul.action.giveDirections()
-        if Paul.state == "MakePBandJ":
+        elif Paul.state == "MakePBandJ":
             Paul.action.MakePBandJ()
         else:
             error "Not a state paul knows"
